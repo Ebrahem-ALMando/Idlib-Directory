@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Idlib-Directory/home/static/css/main.82b25dfd.css",
-    "main.js": "/Idlib-Directory/home/static/js/main.b7eabfa6.js",
+    "main.js": "/Idlib-Directory/home/static/js/main.a4b787dc.js",
     "static/js/787.e94b85af.chunk.js": "/Idlib-Directory/home/static/js/787.e94b85af.chunk.js",
     "static/media/Bahij TheSansArabic-SemiBold.ttf": "/Idlib-Directory/home/static/media/Bahij TheSansArabic-SemiBold.0222758033e7b48ba844.ttf",
     "index.html": "/Idlib-Directory/home/index.html",
     "main.82b25dfd.css.map": "/Idlib-Directory/home/static/css/main.82b25dfd.css.map",
-    "main.b7eabfa6.js.map": "/Idlib-Directory/home/static/js/main.b7eabfa6.js.map",
+    "main.a4b787dc.js.map": "/Idlib-Directory/home/static/js/main.a4b787dc.js.map",
     "787.e94b85af.chunk.js.map": "/Idlib-Directory/home/static/js/787.e94b85af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82b25dfd.css",
-    "static/js/main.b7eabfa6.js"
+    "static/js/main.a4b787dc.js"
   ]
 }
