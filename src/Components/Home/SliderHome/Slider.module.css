@@ -1,0 +1,72 @@
+.slider{
+    height: 700px;
+    margin-bottom: 2rem;
+    color: #008DDA;
+}
+.text{
+    display: none;
+   /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+/*    border: 2px solid #254faa;*/
+    width:50%;
+    margin: auto;
+/*    background-color: rgba(24, 27, 38, 0.8);*/
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    top: -400px;
+    border-radius: 50px 10px 0 0 ;
+    color: #ffffff; /* تغيير اللون للأبيض */
+    background-color: #adb5bdad;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* إضافة ظل للعنصر */
+}
+.text h1{
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(29, 140, 248, 0.8); /* تغيير الظل ليكون أقل وضوحا */
+    filter: wave(0.5px);
+}
+.text p{
+    font-size: 25px;
+}
+.slider img{
+   /*     opacity: 0.8;*/
+    width: 100%;
+    filter: brightness(0.95);
+/*    filter: blur(5px);*/
+}
+.slider .imgSlide2 {
+    margin-top: 110px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1080px) {
+
+    .slider{
+        margin-top: 4.2rem;
+        height: auto;
+    }
+    .text{
+        width: 70%;
+        top: -30px;
+    }
+    .slider img {
+        width: 100%; /* ضبط عرض الصورة لتمتلئ بالكامل داخل العنصر الأب */
+        height: auto; /* إلغاء تحديد ارتفاع الصورة ليتم تعديله تلقائيًا */
+        margin-top: 50px;
+        filter: brightness(0.95);
+    }
+    .slider .imgSlide2 {
+        margin-top: 40px;
+    }
+    .text h1{
+        font-weight: bold;
+        font-size: 30px;
+
+
+    }
+    .text p{
+        font-size: 20px;
+    }
+
+}

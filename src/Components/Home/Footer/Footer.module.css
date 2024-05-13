@@ -1,0 +1,16 @@
+.copy {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
+    width: 100%;
+    margin: auto;
+}
+.nameCopy{
+    margin-top: 0.5rem;
+    color: white;
+
+}
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .nameCopy{
+    text-align: center;
+}}

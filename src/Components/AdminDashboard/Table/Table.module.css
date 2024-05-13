@@ -1,0 +1,55 @@
+.tableData {
+    color: #ded8f4;
+    box-shadow: -10px 0 20px 0 #7c33d3;
+    background: linear-gradient(90deg, #7c33d3, #254eb1);
+    border: #072a7b;
+    border-radius: 10px 0 10px 0;
+    text-align: center;
+    width: 94%;
+
+   ; /* تحويل اللون بسلاسة على مدار 0.3 ثانية */
+}
+/* تنسيق الجدول عندما يكون حجم الشاشة أصغر من 768 بكسل */
+@media (max-width: 380px) {
+    .tableData {
+        width: 100%;
+
+
+    }
+    /* يمكنك أيضًا تصغير حجم الخطوط والخلايا حسب الحاجة */
+    th,
+    td {
+
+        font-size: 8px;
+
+    }
+}
+@media (max-width: 520px) {
+    .tableData {
+        width: 100%;
+
+
+    }
+    /* يمكنك أيضًا تصغير حجم الخطوط والخلايا حسب الحاجة */
+    th,
+    td {
+
+        font-size: 10px;
+
+    }
+}
+.tableData tr{
+
+    transition: background 0.3s ease;
+
+
+}
+.tableData tr:hover {
+    background: #6f00ff;
+    border-color: #dfd8f4;
+}
+
+.tableData tr{
+    vertical-align: middle;
+
+}

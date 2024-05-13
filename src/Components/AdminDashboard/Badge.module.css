@@ -1,0 +1,11 @@
+.btnInfoBadge{
+
+
+    background:linear-gradient(90deg, #7c33d3,#254eb1);
+
+    border: #5a24ad;
+}
+.btnInfoBadge:hover{
+    box-shadow: 10px 0 20px 0 #7c33d3;
+    color: #ded8f4;
+}

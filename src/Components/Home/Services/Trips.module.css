@@ -1,0 +1,37 @@
+.TripsSec {
+    height: auto;
+    background-color: #dfdee29e;
+
+    border-top: 3px solid ; /* يتم استبدال اللون الشفاف باللون المحدد للتدرج */
+    border-bottom: 3px solid ;
+    border-image: linear-gradient(90deg, #41C9E2, #008DDA);
+    border-image-slice: 1;
+
+}
+
+
+
+.textTrips{
+    text-align: center;
+    font-size: 40px;
+    color: #1d8de9;
+    margin:50px auto 5rem auto ;
+}
+@media screen and (min-width: 320px) and (max-width: 1197px) {
+    .textTrips{
+
+        font-size: 30px;
+
+    }
+    .TripsSec{
+        height: auto;
+        margin: 100px auto 5rem auto ;
+
+    }
+    .Cards{
+        margin: auto;
+    }
+}
+/*=============*/
+
+

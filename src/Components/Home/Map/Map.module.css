@@ -1,0 +1,74 @@
+.mapSec{
+    margin-top: 10rem;
+    height: 800px;
+    background-color: #171941;
+    margin-bottom: auto;
+}
+.titleMap{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin:0 auto 2rem auto ;
+}
+.textMap{
+    text-align: center;
+    font-size:22px;
+    color: white;
+    margin:0 auto 5rem auto ;
+}
+.customMapContainer {
+    width: 97%;
+    height: 500px;
+    border:3px solid #254eb1;
+    box-shadow: 0 0 15px 5px  #7c33d3 ;
+    border-radius: 15px 0 15px 0;
+  /*  overflow: hidden;*/
+    margin: auto auto 5rem auto;
+
+}
+
+.compoFilter{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0 15px 2px  #254eb1 ;
+    border-radius: 10px 0 10px 0;
+    border:3px solid #5a24ad;
+    background:linear-gradient(90deg, #7c33d3,#254eb1);
+    text-align: center;
+    outline: none;
+    font-size: 19px;
+    color: white;
+}
+.compoFilter option{
+    color: #060b2d;
+}
+.textFilter{
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 1.3rem;
+    color: #1d8cf8;
+    text-shadow: 4px 3px 7px rgba(255, 255, 255, 0.2);
+}
+
+.buttnGetPath{
+    margin-bottom: 3rem;
+}
+@media screen and (min-width: 320px) and (max-width: 1197px) {
+    .titleMap{
+        font-size: 30px;
+    }
+    .textMap{
+
+        font-size:18px;
+    }
+    .TripsSec{
+        height: auto;
+        margin: auto auto 5rem auto ;
+    }
+    .Cards{
+        margin: auto;
+    }
+}
+
+

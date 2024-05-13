@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Josefin+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,700;1,100;1,500;1,600;1,700&display=swap');
+
+@font-face {
+font-family: 'Bahij TheSansArabic-SemiBold ';
+src: url('/public/assets/fonts/Bahij TheSansArabic-SemiBold.ttf') format('truetype');
+}
+*{
+
+
+/*  font-family: 'Cairo', sans-serif;*/
+  font-family: 'Bahij TheSansArabic','Cairo';
+
+/*  color: white;*/
+}
+body{
+  background-color: white;
+
+}

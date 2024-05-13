@@ -1,0 +1,28 @@
+.Row{
+    height: 100px;
+    margin-bottom: -2.5rem;
+    margin-top: 4rem;
+
+}
+.button {
+    height: 44px;
+    width: 247px;
+    font-weight: 700;
+    color: #fff;
+    border:  none ;
+    text-align: center;
+    /*letter-spacing: 2px;*/
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color: #9D20B1;
+    text-transform: uppercase;
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 1080px) {
+    .Row{
+
+        margin-bottom: 3rem;
+
+    }
+}

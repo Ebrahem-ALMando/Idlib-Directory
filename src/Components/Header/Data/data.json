@@ -1,0 +1,28 @@
+{
+  "menu": [
+    {
+      "title": "الرئيسية",
+      "link": "/home"
+
+    },
+    {
+      "title": "من نحن",
+      "link": "/about"
+    },
+    {
+      "title": "الخدمات",
+      "link": "/trips"
+
+    },
+    {
+      "title": "الاصناف",
+      "link": "/trips"
+
+    },
+    {
+      "title": "تواصل معنا",
+      "link": "/contactus"
+    }
+
+  ]
+}

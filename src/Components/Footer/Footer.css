@@ -1,0 +1,62 @@
+a{
+    text-decoration: none;
+}
+.footer{
+    margin-top: 10rem;
+    width: 100%;
+    height:  165px;
+    background-color: #050821;
+    text-align: center;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+
+
+}
+.content-footer img{
+
+    margin-top: 3.2rem;
+}
+.content-footer ul{
+    margin-top: 4.2rem;
+    display: flex;
+    list-style: none;
+}
+.content-footer li{
+    opacity: 0.7;
+    margin-right:3rem;
+    color: white;
+    cursor: pointer;
+}
+.content-footer li:hover{
+opacity: 1;
+}
+.topImg{
+    background: url("/public/assets/img/PortfolioPage/Vector Smart Object.png");
+    height: 300px;
+    margin-bottom: -150px;
+    width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 1080px) {
+.footer{
+    width: 100%;
+    height:  400px;
+    margin: auto;
+
+
+}
+.content-footer .logo-footer{
+    width: 70%;
+    display: block;
+    text-align: center;
+    margin:2rem auto;
+}
+.content-footer ul{
+    display: block;
+    margin: 1rem;
+}
+    .content-footer ul li{
+        margin: 1rem auto;
+    }
+}

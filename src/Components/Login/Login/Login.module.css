@@ -1,0 +1,86 @@
+.formLogin{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%; /* تحديد المسافة من الجانب الأيسر للصفحة */
+    top: 57%; /* تحديد المسافة من الجزء العلوي للصفحة */
+    transform: translate(-50%, -50%); /* تقليب الديف نحو الوسط */
+    background: linear-gradient(90deg, #7c33d3, #254eb1);
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 5px 10px 5px #7c33d3;
+
+}
+.form{
+    width: 100%;
+}
+.divLogo{
+    text-align: center;
+}
+
+.logo {
+    width:50%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    text-align: center;
+
+}
+.titleLogin{
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+.lable {
+    text-align: right;
+    color: white;
+    margin: 10px;
+    direction: rtl;
+}
+.inputEmail{
+    width: 100%;
+    border:5px solid #5a24ad;
+    border-radius: 8px;
+    height: 50px;
+    box-shadow: 0 1px 5px 1px #f5f5f5;
+
+}
+.inputsubmit{
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border:5px solid #5a24ad;
+    border-radius: 8px;
+    background: linear-gradient(90deg,  #254eb1 , #7c33d3);
+    color: white;
+    height: 50px;
+}
+@media screen and (min-width: 470px) and (max-width: 1000px) {
+    .formLogin{
+        width: 70%;
+        height: 75%;
+    }
+    .logo {
+        width:75%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 50%; /* تحديد المسافة من الجانب الأيسر للصفحة */
+        top: 18%; /* تحديد المسافة من الجزء العلوي للصفحة */
+        transform: translate(-50%, -50%);
+    }
+    .form{
+        width: 100%;
+        margin-top: auto;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 470px) {
+    .formLogin{
+        width: 90%;
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 375px) {
+    .formLogin{
+        width: 90%;
+    }
+}

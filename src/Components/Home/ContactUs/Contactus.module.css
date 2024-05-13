@@ -1,0 +1,169 @@
+.contact {
+    margin-top: 5rem;
+    background: #ffffff;
+    padding: 60px 0 200px 0;
+    margin-bottom: auto;
+
+
+}
+.contact img {
+    width: 90%;
+
+}
+.contact h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #1d8de9;
+}
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    padding: 13px 26px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transition: 0.3s ease-in-out;
+    text-align: right;
+}
+.contact form input:focus,
+.contact form textarea:focus {
+
+    background: #0068ff;
+    color: #ffffff;
+    outline:3px solid #ACE2E1;
+
+}
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.contact form input:focus::placeholder,
+.contact form textarea:focus::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
+.contact form .btnSend:hover {
+    opacity: 0.9;
+}
+.contact form .btnSend::before {
+    /*    content: "";
+        background: #121212;
+        width: 0;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        transition: 0.3s ease-in-out;*/
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); /* تأثير تدرج اللون الخلفي */
+    transition: left 0.4s ease-in-out;
+}
+.contact form .btnSend:hover::before {
+    left: 100%;
+}
+
+.btnSend {
+
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px ;
+    position: relative;
+
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
+
+    width: 100%;
+    font-family: inherit;
+
+
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+
+
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSend span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.btnSend svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btnSend:hover .svgWrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+
+}
+
+.btnSend:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.btnSend:hover span {
+    transform: translateX(23em);
+}
+
+.btnSend:active {
+
+    transform: scale(0.95);
+}
+.btnSend:hover{
+    background: #0068ff;
+    outline:3px solid #ACE2E1;
+}
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.2em);
+    }
+
+    to {
+        transform: translateY(-0.2em);
+    }
+}
+
+.img{
+    animation: move 0.7s ease-in-out infinite alternate;
+}
+@keyframes move {
+    from {
+        transform: translateY(0.3em);
+    }
+
+    to {
+        transform: translateY(-0.3em);
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 360px) {
+    .contact {
+        margin-top:20rem;
+
+    }
+}

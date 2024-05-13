@@ -1,0 +1,55 @@
+.centeredContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+.card {
+    /* ستايل البطاقة كما هو محدد في الكود السابق */
+    border: 1px solid #072a7b;
+    color: #ded8f4;
+    padding: 20px;
+    width: 70%;
+    border-radius: 1rem 0  1rem 0;
+    background: linear-gradient(90deg, #7c33d3, #254eb1);
+    transition: background 0.8s ease, box-shadow 0.5s ease, transform 0.5s ease; /* تحديد مدة التحول والتأثيرات */
+}
+
+.card:hover {
+    border: 1px solid #ded8f4;
+    box-shadow: -10px 0 20px 0 #7c33d3;
+    background: linear-gradient(90deg, #254eb1, #7c33d3); /* تغيير الخلفية عند التحويم */
+    transform: scale(1.05); /* تكبير البطاقة بنسبة 20% عند التحويم */
+}
+.cardTitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+;
+}
+.cardText {
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 95%;
+    text-wrap: avoid;
+}
+.textTitle{
+
+    margin: 2rem auto;
+    text-align: center;
+    transition:  box-shadow 0.5s ease; /* تحديد مدة التحول والتأثيرات */
+
+}
+.textTitle:hover{
+    box-shadow: -10px 0 20px 0 #7c33d3;
+
+}
+.message{
+
+
+}
+@media screen and (min-width: 320px) and (max-width: 1080px) {
+    .card{
+        width: 92%;
+    }
+}

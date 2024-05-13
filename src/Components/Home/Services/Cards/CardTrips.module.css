@@ -1,0 +1,156 @@
+.card{
+    background-color:#DFF5FF ;
+    box-shadow: 0 0 15px 5px  #008DDA ;
+    border-radius: 12px 12px 10px 10px ;
+    border: none;
+    text-transform: uppercase;
+    width: 20rem;
+    height: 30rem;
+    margin-bottom: 5rem;
+}
+.cardHeader{
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
+    text-align: center;
+    border:2px solid #ACE2E1;
+    color: white;
+}
+.cardHeader:first-child{
+    border-radius: 10px 10px 0 0 ;
+}
+.cardBody{
+    color: #1d8de9;
+    text-align: center;
+    padding: 10px;
+    border:3px solid #ACE2E1;
+    border-top: none;
+    border-radius:  0 0 10px 10px ;
+}
+
+.textTitle{
+    margin-top: 0.5rem;
+    font-weight: bold;
+
+    font-size: 26px;
+}
+.textTitle img{
+    margin-left: 0.5rem;
+}
+
+.titleContaint{
+    width: max-content;
+    margin: 0.6rem auto 0.5rem auto;
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 0;
+    color: white;
+
+}
+
+.cardText{
+    margin-top: 1rem;
+    font-size: 15px;
+}
+.cardImg{
+    width: 100%;
+    transition: transform 0.3s, filter 0.3s;
+    border: 2px solid #008DDA ;
+    border-radius: 15px; /* إضافة زوايا مدورة */
+}
+.cardImg:hover{
+    transform: scale(1.05) ; /* تكبير الصورة ودورانها عند مرور المؤشر */
+    filter: brightness(70%); /* تغميق لون الصورة عند مرور المؤشر */
+
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 20000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.modalContent {
+    position: relative;
+    margin: auto;
+    display: block;
+    max-width: 70%;
+    max-height: 70%;
+    top: 150px;
+
+}
+.close {
+    color: #41C9E2FF;
+    position: absolute;
+    top: 150px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tripButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px 0 8px 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
+    color: white;
+    width: 100%;
+}
+
+.tripButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); /* تأثير تدرج اللون الخلفي */
+    transition: left 0.4s ease-in-out; /* تحريك الماسح */
+}
+
+.tripButton:hover::before {
+    left: 100%;
+
+}
+.tripButton:hover {
+    opacity: 0.9;
+
+}
+@media screen and (min-width: 320px) and (max-width: 1246px) {
+    .modalContent {
+
+        width: 90%;
+        max-width: 90%;
+        max-height: 90%;
+    }
+    .close {
+        top: 40px;
+    }
+    .card{
+        max-width: 18rem;
+        margin: auto;
+    }
+    .textTitle img{
+       width: auto;
+    }
+
+    .textTitle{
+        font-size: 18px;
+    }
+    .titleContaint{
+        font-size: 18px;
+    }
+    .cardText{
+        font-size: 15px;
+    }
+}
+
+

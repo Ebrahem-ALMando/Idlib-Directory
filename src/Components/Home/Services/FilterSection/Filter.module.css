@@ -1,0 +1,110 @@
+
+.compoFilter{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 0 15px 2px #80aecf;
+    border-radius: 10px 0 10px 0;
+    border:2px solid #ACE2E1;
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
+    text-align: center;
+    outline: none;
+    font-size: 19px;
+    color: white;
+}
+.compoFilter option{
+    color: #1d8de9;
+}
+.textFilter{
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 1.3rem;
+    color: #1d8cf8;
+    text-shadow: 4px 3px 7px rgba(255, 255, 255, 0.2);
+}
+
+.buttnGetPath{
+    margin-bottom: 3rem;
+}
+@media screen and (min-width: 320px) and (max-width: 1197px) {
+    .titleMap{
+        font-size: 30px;
+    }
+    .textMap{
+
+        font-size:18px;
+    }
+    .rowBTN{
+        transform: translateX(0px);
+    }
+
+}
+
+
+.btnFilter {
+
+
+    font-size: 16px;
+    border: none;
+    border-radius: 8px 0 8px 0;
+    cursor: pointer;
+    overflow: hidden;
+    color: white;
+    width: 170px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+
+}
+
+.btnFilter, .btnFilter span {
+    transition: 200ms;
+}
+
+.btnFilter .text {
+    transform: translateX(13px);
+    color: white;
+    font-weight: bold;
+}
+
+.btnFilter .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnFilter svg {
+    width: 15px;
+    fill: #eee;
+}
+
+.btnFilter:hover {
+    background: #ff3636;
+}
+
+.btnFilter:hover .text {
+    color: transparent;
+}
+
+.btnFilter:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+.btnFilter:focus {
+    outline: none;
+}
+
+.btnFilter:active .icon svg {
+    transform: scale(0.8);
+}
