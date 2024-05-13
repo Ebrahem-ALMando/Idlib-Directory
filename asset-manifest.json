@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d787f73e.css",
+    "main.js": "/static/js/main.ff55957b.js",
+    "static/js/787.e94b85af.chunk.js": "/static/js/787.e94b85af.chunk.js",
+    "static/media/Bahij TheSansArabic-SemiBold.ttf": "/static/media/Bahij TheSansArabic-SemiBold.0222758033e7b48ba844.ttf",
+    "index.html": "/index.html",
+    "main.d787f73e.css.map": "/static/css/main.d787f73e.css.map",
+    "main.ff55957b.js.map": "/static/js/main.ff55957b.js.map",
+    "787.e94b85af.chunk.js.map": "/static/js/787.e94b85af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d787f73e.css",
+    "static/js/main.ff55957b.js"
+  ]
+}
