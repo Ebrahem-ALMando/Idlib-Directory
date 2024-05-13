@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.d787f73e.css",
-    "main.js": "/static/js/main.ff55957b.js",
-    "static/js/787.e94b85af.chunk.js": "/static/js/787.e94b85af.chunk.js",
-    "static/media/Bahij TheSansArabic-SemiBold.ttf": "/static/media/Bahij TheSansArabic-SemiBold.0222758033e7b48ba844.ttf",
-    "index.html": "/index.html",
-    "main.d787f73e.css.map": "/static/css/main.d787f73e.css.map",
-    "main.ff55957b.js.map": "/static/js/main.ff55957b.js.map",
-    "787.e94b85af.chunk.js.map": "/static/js/787.e94b85af.chunk.js.map"
+    "main.css": "/Idlib-Directory/static/css/main.3d530aac.css",
+    "main.js": "/Idlib-Directory/static/js/main.2d538b0e.js",
+    "static/js/787.e94b85af.chunk.js": "/Idlib-Directory/static/js/787.e94b85af.chunk.js",
+    "static/media/Bahij TheSansArabic-SemiBold.ttf": "/Idlib-Directory/static/media/Bahij TheSansArabic-SemiBold.0222758033e7b48ba844.ttf",
+    "index.html": "/Idlib-Directory/index.html",
+    "main.3d530aac.css.map": "/Idlib-Directory/static/css/main.3d530aac.css.map",
+    "main.2d538b0e.js.map": "/Idlib-Directory/static/js/main.2d538b0e.js.map",
+    "787.e94b85af.chunk.js.map": "/Idlib-Directory/static/js/787.e94b85af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d787f73e.css",
-    "static/js/main.ff55957b.js"
+    "static/css/main.3d530aac.css",
+    "static/js/main.2d538b0e.js"
   ]
 }
