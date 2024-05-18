@@ -6,10 +6,10 @@
     left: 50%; /* تحديد المسافة من الجانب الأيسر للصفحة */
     top: 57%; /* تحديد المسافة من الجزء العلوي للصفحة */
     transform: translate(-50%, -50%); /* تقليب الديف نحو الوسط */
-    background: linear-gradient(90deg, #7c33d3, #254eb1);
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
     padding: 10px;
     border-radius: 25px;
-    box-shadow: 0 5px 10px 5px #7c33d3;
+    box-shadow: 0 5px 10px 5px #008DDA;
 
 }
 .form{
@@ -17,10 +17,11 @@
 }
 .divLogo{
     text-align: center;
+
 }
 
 .logo {
-    width:50%;
+    width:200px;
     aspect-ratio: 3/2;
     object-fit: contain;
     text-align: center;
@@ -38,22 +39,64 @@
     direction: rtl;
 }
 .inputEmail{
+
     width: 100%;
-    border:5px solid #5a24ad;
+    border:  #ACE2E1;
+    border-bottom: 4px solid;
+
     border-radius: 8px;
     height: 50px;
-    box-shadow: 0 1px 5px 1px #f5f5f5;
+   /* box-shadow: 0 1px 5px 1px #f5f5f5;*/
+margin-bottom: 20px;
+}
+.boxInput div::before{
+
+    border-bottom: 3px solid rgb(255, 255, 255);
+
+
+
+
+}
+.boxInput div::after{
+
+    border-bottom: 3px solid rgb(255, 255, 255);
+
+
+
+
+}
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+    color: white;
+}
+.inputEmail input:hover{
+    border: none;
+    border-bottom: 12px solid rgb(255, 255, 255);
+
+
+outline: #7c33d3 0px;
+
+}
+.inputEmail input:focus{
+    border: none;
+    border-bottom: 12px solid rgb(255, 255, 255);
+
+
+    outline: #7c33d3 0px;
 
 }
 .inputsubmit{
     width: 100%;
     margin-top: 25px;
     margin-bottom: 25px;
-    border:5px solid #5a24ad;
-    border-radius: 8px;
-    background: linear-gradient(90deg,  #254eb1 , #7c33d3);
+    border:3px solid #ACE2E1;
+
+    border-radius: 8px 0 8px 0;
+   /* background:linear-gradient(90deg, #41C9E2,#008DDA);*/
     color: white;
     height: 50px;
+}
+.inputsubmit:hover{
+    border:3px solid #ffffff;
 }
 @media screen and (min-width: 470px) and (max-width: 1000px) {
     .formLogin{
@@ -61,7 +104,7 @@
         height: 75%;
     }
     .logo {
-        width:75%;
+        width:200px;
         display: flex;
         justify-content: center;
         position: absolute;
@@ -73,6 +116,29 @@
         width: 100%;
         margin-top: auto;
     }
+}
+.foterLogin{
+    width: 100%;
+    background-color: white;
+    height: 40px;
+    border-radius: 8px;
+    opacity: 0.85;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foterLogin p{
+
+    color: #1d8cf8;
+    text-align: center;
+
+}
+.createAcc{
+    margin-right: 10px;
+    color: #fa0000;
+    text-decoration: none;
+    font-weight: bold;
+
 }
 @media screen and (min-width: 375px) and (max-width: 470px) {
     .formLogin{

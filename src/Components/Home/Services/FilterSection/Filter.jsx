@@ -9,7 +9,7 @@ const Filter=()=>{
         <>
     <Row  xl={6} className={` row justify-content-center `}>
 
-        <Col xl={6} className={`col-auto col-6 `}>
+        <Col xl={6} className={`col-auto col-6 ${styles.colInputFilter}`}>
             <p className={`${styles.textFilter} `}>
                 البحث عن شيئ مخصص
             </p>
@@ -42,7 +42,7 @@ const Filter=()=>{
 
 
         </Col>
-        <Col xl={6} className={`col-auto col-6 `}>
+        <Col xl={6} className={`col-auto col-6 ${styles.colInputFilter}`}>
             <p className={`${styles.textFilter} `}>
             التصنيفات والمؤسسات
             </p>

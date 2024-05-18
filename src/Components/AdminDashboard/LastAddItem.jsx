@@ -38,7 +38,7 @@ function LastAddItem(props) {
 
 const YourMembers = styled.div`
   height: 70%;
-  background:linear-gradient(90deg, #7c33d3,#254eb1);
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
   margin: 0;
   padding: 1rem;
   border-radius: 1rem;
@@ -46,7 +46,7 @@ const YourMembers = styled.div`
   rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   transition: 0.4s ease-in-out;
   &:hover {
-    box-shadow: 0 15px 20px 10px #7c33d3;
+    box-shadow: 0 15px 20px 10px #008DDA;
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     height: max-content;
@@ -81,9 +81,9 @@ const SubTitle = styled.h5`
   font-weight: 300;
 `;
 const AllMembers = styled.h5`
-  text-align: end;
-  color:#e0d8f5;
-  cursor: pointer;
+    text-align: end;
+    color: #ffffff;
+    cursor: pointer;
 `;
 
 export default LastAddItem;

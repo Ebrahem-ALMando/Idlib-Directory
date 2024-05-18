@@ -32,11 +32,13 @@ useEffect(()=>{
       <Col xl={3} className={`col-auto m-4 `} >
           <Card className={`${styles.card}`} >
               <Card.Header className={`${styles.cardHeader}`}>
-
+                  <img
+                      className={styles.icon}
+                      alt={"img"} src="/assets/img/TripsPage/Categores/health.svg"/>
                   <Card.Title className={`${styles.textTitle}`}>
 
-                       الخدمات الصحية
-                      <img alt={"img"} src="/assets/img/TripsPage/Hospital.png"/>
+                      الخدمات الصحية
+
 
                       <h5 className={`${styles.titleContaint}`}>
                           {title}
@@ -56,10 +58,10 @@ useEffect(()=>{
                       {description}
                   </Card.Text>
 
-                 <h3 style={{color:'#41C9E2FF'}}>
+              {/*   <h3 style={{color:'#41C9E2FF'}}>
                      {price}
 
-                 </h3>
+                 </h3>*/}
 
                   <Link
                         className="text-decoration-none link-light" to="/trip" >

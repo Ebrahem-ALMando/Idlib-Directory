@@ -5,18 +5,35 @@ import {
     RiDatabaseFill,
     RiMessengerFill,
     RiAccountCircleLine,
-    RiUser3Fill
+    RiUser3Fill,
+    RiHomeSmile2Fill,
+    RiHomeHeartFill,
+    RiHomeFill,
+    RiHome8Fill,
+    RiHome2Fill,
+    RiHome4Fill,
+    RiUser2Fill,
+    RiUser6Fill,
+    RiUserHeartFill,
+    RiUserReceived2Fill,
+    RiCustomerService2Fill,
+    RiDashboard3Fill,
+    RiDashboard2Fill,
+
+    RiDashboardFill, RiServiceFill, RiFileListFill, RiFileInfoFill, RiFileHistoryFill
 } from "react-icons/ri";
-import {FaCar, FaSubway, FaWallet} from "react-icons/fa";
+import {FaBlog, FaCar, FaClipboardList, FaSubway, FaWallet, FaXbox} from "react-icons/fa";
 import { AiOutlinePieChart } from "react-icons/ai";
 
 import React, {useEffect, useState} from "react";
 import {SiGooglemessages} from "react-icons/si";
-import {BiCategoryAlt, BiLogIn} from "react-icons/bi";
+import {BiCategoryAlt, BiLogIn, BiSolidBuildingHouse} from "react-icons/bi";
 import styles from './Sidebar.module.css'
-import {FaLocationDot, FaMapLocationDot} from "react-icons/fa6";
+import {FaBuildingFlag, FaLocationDot, FaMapLocationDot} from "react-icons/fa6";
 import {PiPathBold} from "react-icons/pi";
 import Badge from "./Badge";
+
+
 
 function Sidebar(props) {
     const [isPressed, setIsPressed] = useState('dashboard');
@@ -66,7 +83,7 @@ function Sidebar(props) {
 
                         }}
                     >
-                        <RiHomeLine />
+                        <RiDashboardFill />
 
                             <h3
                                 onClick={()=>{setActiveLinkUrl("dashboard")}}
@@ -77,41 +94,29 @@ function Sidebar(props) {
                     <Link id={`${activeLink === "Enquiries" ? "active-link" : "lin"}`}
                           className="text-decoration-none link-light" to="/drivers" >
                     <Linkurl
-                        className={isPressed==="drivers"?styles.selecct:null}
-                        onClick={()=>{handleMouseActiveLink("drivers")}}
+                        className={isPressed==="users"?styles.selecct:null}
+                        onClick={()=>{handleMouseActiveLink("users")}}
                     >
-                        <RiAccountCircleLine />
+                        <RiUserReceived2Fill />
 
                             <h3
 
-                            >السائقين </h3>
+                            >المستخدمين </h3>
 
                     </Linkurl>
                     </Link>
-         {/*           <Linkurl
-                        onMouseDown={handleMouseDown}
 
-                        isPressed={isPressed}
-                    >
-                        <RiAccountCircleLine />
-                        <Link id={`${activeLink === "users" ? "active-link" : "lin"}`}
-                              className="text-decoration-none link-light" to="/users" >
-                            <h3
-                                onClick={()=>{setActiveLinkUrl("users")}}
-                            >المستخدمين</h3>
-                        </Link>
-                    </Linkurl>*/}
                     <Link  id={`${activeLink === "students" ? "active-link" : "lin"}`}
                            className="text-decoration-none link-light" to="/wagons" >
                     <Linkurl
                         className={isPressed==="bass"?styles.selecct:null}
-                        onClick={()=>{handleMouseActiveLink("bass")}}
+                        onClick={()=>{handleMouseActiveLink("categories")}}
                     >
-                        <FaCar />
+                        <FaClipboardList />
 
                             <h3
-                                onClick={()=>{setActiveLinkUrl("students")}}
-                            >العربات</h3>
+                                onClick={()=>{setActiveLinkUrl("categories")}}
+                            >التصنيفات</h3>
 
                     </Linkurl>
                     </Link>
@@ -121,15 +126,15 @@ function Sidebar(props) {
                         className={isPressed==="regions"?styles.selecct:null}
                         onClick={()=>{handleMouseActiveLink("regions")}}
                     >
-                        <FaLocationDot />
+                        <FaBuildingFlag />
 
                             <h3
                                 onClick={()=>{setActiveLinkUrl("services")}}
-                            >المناطق</h3>
+                            >الخدمات</h3>
 
                     </Linkurl>
                     </Link>
-                    <Link id={`${activeLink === "category_courses" ? "active-link" : "lin"}`}
+            {/*        <Link id={`${activeLink === "category_courses" ? "active-link" : "lin"}`}
                           className="text-decoration-none link-light" to="/positions" >
                     <Linkurl
                         className={isPressed==="positions"?styles.selecct:null}
@@ -170,7 +175,7 @@ function Sidebar(props) {
                             >الرحلات</h3>
 
                     </Linkurl>
-                    </Link>
+                    </Link>*/}
                     <Link id={`${activeLink === "message" ? "active-link" : "lin"}`}
                           className="text-decoration-none link-light" to="/message" >
                     <Linkurl
@@ -209,6 +214,7 @@ function Sidebar(props) {
                 </Links>
 
                 <ContactContainer>
+                    <IMG src="/assets/img/date.svg" alt={''}/>
                     <span>التاريخ </span>
                     <q className="text-center">
                         {
@@ -229,8 +235,9 @@ const Container = styled.div`
  
   height: 100% !important;
   border-radius: 2rem 0 0 2rem;
-  box-shadow: -10px 0 20px 0 #7c33d3;
-  background:linear-gradient(90deg, #7c33d3,#254eb1);
+  box-shadow: -10px 0 20px 0 #008DDA;
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,6 +255,13 @@ const ProfileContainer = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 3px solid;
+
+    border-color: #ffffff;
+
+
 `;
 
 const Avatar = styled.img`
@@ -265,7 +279,7 @@ const Name = styled.h1`
 `;
 
 const LinksContainer = styled.div`
-    background:linear-gradient(90deg, #7c33d3,#254eb1);
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
 
     height: 100%;
     width: 100%;
@@ -282,56 +296,63 @@ const Links = styled.ul`
 `;
 
 const Linkurl = styled.li`
-  margin-right: 7%;
-  margin-left: 7%;
-  margin-bottom: 2rem;
-  margin-top:-1rem;
-  display: flex;
-  gap: 1rem;
-  color: #e4e4e4;
-  cursor: pointer;
-  border: 2px solid white;
-  border-radius: 10px 0 10px 0;
- height: 50px;
-  padding: 10px 15px;
-  h3 {
-    font-weight: 200;
-    font-size: 22px;
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-bottom: 2rem;
+    margin-top: -1rem;
+    display: flex;
+    gap: 1rem;
+    color: #faf9f9;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px 0 10px 0;
+    height: 50px;
+    padding: 10px 15px;
+
+    h3 {
+        font-weight: 200;
+        font-size: 22px;
+
+        &:hover {
+            color: #0068ff;
+        }
+    }
+
+    svg {
+        font-size: 1.5rem;
+        
+    }
+
+    opacity: 0.95;
+
+    transition: background 0.3s, color 0.3s;
+
+
     &:hover {
-      color: #060b2d;
+        h3 {
+            color: #0068ff;
+            transition-delay: 0.15s;;
+        }
+
+        background: white;
+        color: #0068ff;
+        transition-delay: 0.15s;;
     }
-  }
-  svg {
-    font-size: 1.5rem;
-  }
-  opacity: 0.8;
 
-  transition: background 0.3s, color 0.3s;
-
-
-  &:hover {
-    h3{
-      color: #060b2d;
-      transition-delay: 0.15s;;
+    @media screen and (min-width: 320px) and (max-width: 1080px) {
+        width: 300px;
+        margin: 0.7rem auto;
     }
-    background: white;
-    color: #060b2d;
-    transition-delay: 0.15s;;
-  }
-
-  @media screen and (min-width: 320px) and (max-width: 1080px) {
-    width: 300px;
-    margin: 0.7rem auto;
-  }
 `;
 
 const ContactContainer = styled.div`
     width: 60%;
-    background-color: #091322;
-    color: #c4c4c4;
+    background: #ffffff;
+    color: #0068ff;
     height: 20%;
     margin: 2rem auto;
     border-radius: 1rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -345,6 +366,14 @@ const ContactContainer = styled.div`
         margin-bottom: 2rem;
     }
 `;
-
+const IMG=styled.img`
+    
+    margin: auto;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    width: 50px;
+    height: 50px;
+ 
+`
 export default Sidebar;
 

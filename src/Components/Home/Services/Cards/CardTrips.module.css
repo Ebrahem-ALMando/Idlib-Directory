@@ -123,6 +123,40 @@
 .tripButton:hover {
     opacity: 0.9;
 
+}/*
+.cardHeader::before {
+
+    position: absolute;
+    top: 0;
+    left: -100%; !* تحريك الماسح بعيدًا عن البطاقة في البداية *!
+    width: 100%; !* زيادة عرض الماسح لضمان تغطية كامل البطاقة *!
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); !* تأثير تدرج اللون الخلفي *!
+    transition: left 0.4s ease-in-out; !* تحريك الماسح *!
+}
+
+.cardHeader:hover::before {
+    left: 100%; !* تحريك الماسح ليغطي البطاقة بالكامل عند تحويل المؤشر إليها *!
+}
+
+.cardHeader:hover {
+    opacity: 0.9; !* تغيير الشفافية للبطاقة عند التحويل إليها *!
+}
+*/
+.icon{
+    width: 45px;
+    height: 45px;
+
+    transition: transform 0.3s, filter 0.3s;
+
+}
+.icon:hover{
+    transform: scale(1.2);
+
+    filter: brightness(87%) ;
+
+
+
 }
 @media screen and (min-width: 320px) and (max-width: 1246px) {
     .modalContent {

@@ -71,7 +71,7 @@ const Container = styled.div`
 
 
 
-  background: #072a7b;
+    background:#ebebed;
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     flex-direction: column;
   }

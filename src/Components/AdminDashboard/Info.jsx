@@ -32,7 +32,7 @@ function Info(props) {
                     <Row justify>
                    {/*     <Link to={props.url}   className="text-decoration-none link-light">*/}
                             <Badge
-                                className={stylesBD.btnInfoBadge}
+                                className={`${stylesBD.btnInfoBadge} ${stylesBD.btnInfoBadgeAdmin}`}
                                 text={props.badgeOne}  />
 
                      {/*   </Link>*/}
@@ -54,7 +54,7 @@ function Info(props) {
 const InfoCard = styled.div`
   height: 100%;
   width: 17rem;
-  background:linear-gradient(90deg, #7c33d3,#254eb1);
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
   border-radius: 1rem;
   padding: 1rem;
   color: white;
@@ -62,7 +62,8 @@ const InfoCard = styled.div`
   rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
   transition: 0.4s ease-in-out;
   &:hover {
-    box-shadow: 0 15px 20px 10px #7c33d3;
+    box-shadow: 0 15px 20px 10px #008DDA;
+ 
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     width: 80%;
@@ -70,9 +71,9 @@ const InfoCard = styled.div`
 `;
 
 const Card = styled.div`
-  background-color: #e0d8f5;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
 `;
 
 const CardContent = styled.div`
@@ -91,19 +92,20 @@ const Row = styled.div`
   `}
 `;
 const Digit = styled.div`
-  background:linear-gradient(90deg, #7c33d3,#254eb1);
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
   padding: 0.8rem 1rem;
   font-size: 1.3rem;
   border-radius: 1rem;
+ 
 `;
 const InfoContainer = styled.div`
   margin-right: 0.7rem;
 `;
 const Title = styled.h3`
-  color: #060B2D;
+    color: #0068ff;
 `;
 const SubTitle = styled.h5`
-  color: #333333;
+    color: #0068ff;;
   font-weight: normal;
 `;
 

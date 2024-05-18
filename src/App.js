@@ -33,8 +33,9 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import AppAdmin from "./AppAdmin";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Login from "./Components/Login/Login/Login";
+import Login from "./Components/Login/Login";
 import Trip from "./Components/Home/Services/ShowTrips/ShowTrips/Trip";
+import SignIn from "./Components/SignIn/SignIn";
 function App() {
         const [isContactus,setIsContactus]=useState(false)
         const isContactusValue={isContactus,setIsContactus};
@@ -55,11 +56,14 @@ function App() {
                 <Routes>
                     <Route  path="/home" element={<Home/>} />
                     <Route  path="/" element={<Home/>} />
- {/*
                     <Route  path="/login" element={ <Login/>} />
-                    <Route  path="/trip" element={ <Trip/>} />*/}
+                    <Route  path="/SignIn" element={ <SignIn/>} />
+
+
 
                 </Routes>
+
+    {/*            <Route  path="/trip" element={ <Trip/>} />*/}
             {/*<Slider/>*/}
 
         {/*    <CardTrips

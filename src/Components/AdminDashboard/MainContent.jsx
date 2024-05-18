@@ -137,7 +137,7 @@ const MainContent=(props)=> {
                         <ViewCardInfo title={"الرحلات"} count={70}
                                       time={"  منذ اخر شهر"}
                                       increment={"20%"}
-                                      bgcolor={"#9b67e5"}
+
                         />
                         <Info
                             countSectionTow={countLine}
@@ -196,7 +196,7 @@ const H1=styled.h1`
 position: relative;
  top: 20%;
   text-align: center;
-  background:linear-gradient(90deg, #7c33d3,#254eb1);
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
   padding: 50px;
   border-radius: 20px;
   opacity: 0.8;
@@ -223,9 +223,10 @@ const Icon=styled.span`
 const Container = styled.div`
   width: 80%;
   color: white;
-  border-bottom-right-radius: 2rem;
-  border-top-right-radius: 2rem;
+
+
   margin: 1rem 8rem 1rem 4rem;
+    
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     display: flex;
     flex-direction: column;
@@ -245,6 +246,11 @@ const SubContainer = styled.div`
   }
 `;
 const SectionOne = styled.div`
+    padding-top: 20px;
+    border-top: 3px solid ;
+
+    border-image: linear-gradient(90deg, #41C9E2, #008DDA);
+    border-image-slice: 1;
   display: flex;
   justify-content: space-between;
   height: 40%;
@@ -282,6 +288,7 @@ const ColumnTwo1 = styled.div`
 
 const TitleText = styled.h3`
   height: 26%;
+    color: #1d8de9;
   /* padding-top */
 `;
 

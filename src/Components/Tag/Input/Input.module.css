@@ -1,0 +1,74 @@
+
+@font-face {
+    font-family: 'NovaMono Regula';
+    src: url('/public/assets/fonts/Pandaify-e1fa23e529b28146e4a2f2178d89329e (1).ttf') format('truetype');
+}
+  .inputDiv {
+    position: relative;
+    margin: 15px 0;
+    display: flex; /* إضافة مرونة للعناصر داخل الحاوية */
+
+}
+
+.inputDiv:hover {
+    border-bottom: 3px solid #8bdddc;
+
+}
+.borderColor{
+    border-bottom: 3px solid #ffffff;
+}
+.borderColorF{
+    border-bottom: 3px solid #254eb1;
+}
+.borderColorF:hover{
+    border-bottom: 3px solid #254eb1;
+}
+.inputDiv label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+    flex: 1; /* توسيع التسمية لتمتد عبر العرض */
+    font-family: "NovaMono Regula";
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+}
+
+.inputDiv input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    flex: 1; /* توسيع الإدخال ليمتد عبر العرض */
+}
+
+.input:focus ~ label,.inputDiv .valInput {
+    font-size: 14px;
+    font-weight: 600;
+    top: 10px;
+    transform: translateY(-120%);
+    color: #fdfdfd;;
+
+}
+.inputDiv input[type="number"]{
+
+    direction: ltr;
+}
+.inputSign{
+    margin-right:20px ;
+    width: 88%;
+}
+.signLogInput{
+    width: 94%;
+    margin-right: 20px;
+}
+.input{
+    text-align: center;
+}

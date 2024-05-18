@@ -25,19 +25,22 @@ const NavbarContainer = styled.nav`
 `;
 
 const Text = styled.h1`
+    color: #1d8de9;
   span {
     font-weight: 500;
-    color: #e0d8f5;
+      color: #1d8de9;
   }
   @media screen and (min-width: 320px) and (max-width: 1080px) {
     margin-top: 1rem;
   }
 `;
+/*
 const InputContainer = styled.div`
   display: flex;
 `;
+*/
 
-const Icon = styled.div`
+/*const Icon = styled.div`
   height: 3rem;
   width: 3rem;
   background-color: #dce4ff;
@@ -49,8 +52,8 @@ const Icon = styled.div`
   svg {
     color: #555555;
   }
-`;
-const Input = styled.input`
+`;*/
+/*const Input = styled.input`
   border: none;
   background-color: #dce4ff;
   border-top-right-radius: 0.5rem;
@@ -61,6 +64,6 @@ const Input = styled.input`
     border: none;
     outline: none;
   }
-`;
+`;*/
 
 export default Navbar;

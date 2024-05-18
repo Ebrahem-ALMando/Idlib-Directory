@@ -1,10 +1,10 @@
 .selecct{
-    background: white;
-    color: #060b2d;
-    transition-delay: 0.15s;;
+    background: #ffffff;
+    color: #0068ff;
+    transition-delay: 0.20s;;
 
 }
 .selecct h3,.selecct svg{
-    color: #060b2d;
-    transition-delay: 0.15s;;
+    color: #0068ff;
+    transition-delay: 0.20s;;
 }

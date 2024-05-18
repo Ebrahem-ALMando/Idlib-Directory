@@ -29,13 +29,13 @@ function ViewCardInfo(props) {
 const Card = styled.div`
   height: 100%;
   width: 14rem;
-  background:linear-gradient(90deg, #7c33d3,#254eb1);
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
   padding: 1rem;
   border-radius: 1rem;
   color: white;
   transition: 0.4s ease-in-out;
   &:hover {
-    box-shadow:#7c33d3 0px 22px 70px 4px
+    box-shadow:#008DDA 0px 22px 70px 4px
    
   }
 

@@ -1,11 +1,15 @@
 .btnInfoBadge{
 
 
-    background:linear-gradient(90deg, #7c33d3,#254eb1);
+    background:linear-gradient(90deg, #41C9E2,#008DDA);
 
-    border: #5a24ad;
+    border: #ACE2E1;
+    color: white;
 }
 .btnInfoBadge:hover{
-    box-shadow: 10px 0 20px 0 #7c33d3;
+    box-shadow: 10px 0 20px 0 #ACE2E1;
     color: #ded8f4;
+}
+.btnInfoBadgeAdmin:hover{
+
 }
